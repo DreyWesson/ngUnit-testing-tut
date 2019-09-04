@@ -24,7 +24,8 @@ export class HeroesComponent implements OnInit {
 
   add(name: string): void {
     name = name.trim();
-    var strength = 11
+    // tslint:disable-next-line: prefer-const
+    let strength = 11;
     if (!name) { return; }
     this.heroService.addHero({ name, strength } as Hero)
       .subscribe(hero => {

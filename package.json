@@ -7,7 +7,7 @@
     "ng": "ng",
     "build": "ng build --prod",
     "start": "ng serve",
-    "test": "ng test",
+    "test": "ng test --source-map=false",
     "lint": "tslint ./src/**/*.ts -t verbose",
     "e2e": "ng e2e"
   },
@@ -36,7 +36,7 @@
     "@angular-devkit/build-angular": "0.11.2",
     "@angular/cli": "7.1.2",
     "@angular/compiler-cli": "7.1.2",
-    "@angular/language-service": "7.1.2",
+    "@angular/language-service": "^7.1.2",
     "@types/jasmine": "2.8.6",
     "@types/jasminewd2": "2.0.3",
     "@types/node": "8.9.4",
